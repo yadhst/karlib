@@ -15,7 +15,7 @@ Karlib is a web-based project designed to provide a comprehensive library manage
 ## To Do
 
 - [x] Setup project with [Next.js](https://nextjs.org/)
-- [ ] Setup [Prettier](https://prettier.io/)
+- [x] Setup [Prettier](https://prettier.io/)
 - [ ] Setup [Tailwind CSS](https://tailwindcss.com/) and [shadcn-ui](https://ui.shadcn.com/)
 - [ ] Setup database with [Turso](https://turso.tech/) and [Drizzle ORM](https://orm.drizzle.team/)
 - [ ] Create database schema with Drizzle
@@ -64,21 +64,21 @@ Karlib is a web-based project designed to provide a comprehensive library manage
 ### How to Setup the Project Locally
 
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/yadhst/karlib.git
-    ```
+   ```bash
+   git clone https://github.com/yadhst/karlib.git
+   ```
 2. Navigate to the project directory:
-    ```bash
-    cd karlib
-    ```
+   ```bash
+   cd karlib
+   ```
 3. Install dependencies:
-    ```bash
-    pnpm install
-    ```
+   ```bash
+   pnpm install
+   ```
 4. Start the development server:
-    ```bash
-    pnpm dev
-    ```
+   ```bash
+   pnpm dev
+   ```
 
 ## Usage
 
@@ -90,17 +90,17 @@ We welcome contributions! Please follow these steps to contribute:
 
 1. Fork the repository.
 2. Create a new branch:
-    ```bash
-    git checkout -b feature-branch
-    ```
+   ```bash
+   git checkout -b feature-branch
+   ```
 3. Make your changes and commit them:
-    ```bash
-    git commit -m "Description of your changes"
-    ```
+   ```bash
+   git commit -m "Description of your changes"
+   ```
 4. Push to the branch:
-    ```bash
-    git push origin feature-branch
-    ```
+   ```bash
+   git push origin feature-branch
+   ```
 5. Create a pull request.
 
 ## License

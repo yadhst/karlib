@@ -21,6 +21,7 @@
 /build
 
 # misc
+/.drizzle/
 .DS_Store
 *.pem
 *.ignored.*

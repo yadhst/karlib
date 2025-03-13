@@ -17,12 +17,12 @@ Karlib is a web-based project designed to provide a comprehensive library manage
 - [x] Setup project with [Next.js](https://nextjs.org/)
 - [x] Setup [Prettier](https://prettier.io/)
 - [x] Setup [Tailwind CSS](https://tailwindcss.com/) and [shadcn-ui](https://ui.shadcn.com/)
-- [ ] Setup database with [Turso](https://turso.tech/) and [Drizzle ORM](https://orm.drizzle.team/)
+- [x] Setup database with [Turso](https://turso.tech/) and [Drizzle ORM](https://orm.drizzle.team/)
 - [ ] Create database schema with Drizzle
-  - [ ] Users
-  - [ ] Works
-  - [ ] Bookmarks
-  - [ ] History
+  - [x] Users
+  - [x] Works
+  - [x] Bookmarks
+  - [x] History
   - [ ] Comments
 - [ ] Setup [UploadThing](https://uploadthing.com/) for file uploads
 - [ ] Implement authentication system with [NextAuth](https://authjs.dev/)

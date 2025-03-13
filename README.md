@@ -24,7 +24,7 @@ Karlib is a web-based project designed to provide a comprehensive library manage
   - [x] Bookmarks
   - [x] History
   - [ ] Comments
-- [ ] Setup [UploadThing](https://uploadthing.com/) for file uploads
+- [x] Setup [UploadThing](https://uploadthing.com/) for file uploads
 - [ ] Implement authentication system with [NextAuth](https://authjs.dev/)
 - [ ] Implement RBAC system for authorization
 - [ ] Implement theme-mode system with [next-themes](https://www.npmjs.com/package/next-themes)

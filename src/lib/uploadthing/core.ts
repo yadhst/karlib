@@ -1,6 +1,8 @@
 import { createUploadthing, type FileRouter } from "uploadthing/next";
 import { UploadThingError } from "uploadthing/server";
 
+import { auth } from "@/lib/authentication/handler";
+
 const routeHandler = createUploadthing();
 
 export type UTFileRouterType = typeof UTFileRouter;
@@ -11,12 +13,27 @@ export const UTFileRouter = {
       maxFileCount: 1,
     },
   })
-    .middleware(async ({ req }) => {
-      // Authorization logic goes here soon
+    .middleware(async () => {
+      const session = await auth();
+      if (!session?.user)
+        throw new UploadThingError("You are not authenticated");
 
-      return {};
+      const validRoles = ["Admin", "Consultant"];
+      if (!validRoles.includes(session.user.role))
+        throw new UploadThingError(
+          "You are not allowed to perform this action",
+        );
+
+      return { user: session.user };
     })
-    .onUploadComplete(({ file }) => {
-      return { key: file.key };
+    .onUploadComplete(({ file, metadata }) => {
+      return {
+        key: file.key,
+        user: {
+          ...metadata.user,
+          createdTimestamp: metadata.user.createdTimestamp.getTime(),
+          emailVerified: null,
+        },
+      };
     }),
 } as const satisfies FileRouter;

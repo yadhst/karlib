@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 import { inter, merriweather } from "@/styles/fonts";
 import { cn } from "@/lib/utils";
+import Providers from "./providers";
 
 export const metadata: Metadata = {
   title: "Karlib",
@@ -18,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="id">
       <body className={cn(inter.className, merriweather.variable)}>
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

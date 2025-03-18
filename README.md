@@ -37,7 +37,7 @@ Karlib is a web-based project designed to provide a comprehensive library manage
   - [ ] Bookmark page (authenticated users only)
   - [ ] History page (authenticated users only)
   - [ ] Dashboard page (admin and consultant only)
-- [ ] Implement theme-mode system with [next-themes](https://www.npmjs.com/package/next-themes)
+- [x] Implement theme-mode system with [next-themes](https://www.npmjs.com/package/next-themes)
 - [ ] Create root layout for most pages
   - [ ] Create navbar component
   - [ ] Create footer component

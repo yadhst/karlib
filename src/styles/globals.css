@@ -50,6 +50,7 @@
   --chart-5: hsl(27 87% 67%);
 
   --base-radius: 0.5rem;
+  --navbar-height: 73px;
 }
 
 .dark {
@@ -154,5 +155,11 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .layout-container {
+    @apply mx-auto max-w-5xl px-4;
   }
 }

@@ -24,7 +24,7 @@ export default function Navbar() {
           <FupChild as={Link} href="/" className="flex-1">
             <div className="flex items-center gap-1">
               <BrandWithoutText className="size-9" />
-              <span className="text-xl font-(family-name:--font-merriweather) font-black">
+              <span className="font-(family-name:--font-merriweather) text-xl font-black">
                 Karlib<span className="text-primary">112</span>
               </span>
             </div>

@@ -11,9 +11,8 @@ import {
   DrawerFooter,
 } from "@/components/ui/drawer";
 import { DrawerTabsTrigger } from "@/components/ui/drawer/drawer-tabs";
-import type { User } from "@/lib/database/schema";
 
-export default function SignOutContent({ user }: { user: User }) {
+export default function SignOutContent() {
   const [isPending, startTransition] = useTransition();
   const handleSignOut = () => {
     startTransition(() => {

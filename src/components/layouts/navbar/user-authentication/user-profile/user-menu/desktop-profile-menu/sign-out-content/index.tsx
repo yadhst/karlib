@@ -12,9 +12,8 @@ import {
   ModalFooter,
   ModalClose,
 } from "@/components/ui/modal";
-import type { User } from "@/lib/database/schema";
 
-export default function SignOutContent({ user }: { user: User }) {
+export default function SignOutContent() {
   const [isPending, startTransition] = useTransition();
   const handleSignOut = () => {
     startTransition(() => {

@@ -58,7 +58,7 @@ export default function DesktopProfileMenu({
           </ModalTrigger>
         </DropdownMenuContent>
       </DropdownMenu>
-      <SignOutContent user={user} />
+      <SignOutContent />
     </Modal>
   );
 }
